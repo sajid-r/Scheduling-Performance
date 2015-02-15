@@ -1,0 +1,4 @@
+data = [line.split() for line in file('data.txt', 'rU').read().split('\n')]
+del data[-1]
+for index, item in enumerate(data):
+	print index,' ',item, ' ',len(item)
